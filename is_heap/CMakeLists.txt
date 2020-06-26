@@ -9,7 +9,7 @@ set(UTILS ../Utils)
 include_directories(${STRONG_TYPE})
 include_directories(${UTILS})
 
-add_executable(make_heap main.cpp
+add_executable(is_heap main.cpp
         ${UTILS}/Utils.h
         ${STRONG_TYPE}/StrongType.h
         ${STRONG_TYPE}/StrongDataTypes.h
