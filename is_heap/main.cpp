@@ -63,7 +63,7 @@ int main() {
     PrintCollection(collectionOne);
     auto diffOne = collectionOne.size()/2;
     cout << "Is a Max Heap for Range - (" << 0 << " to " << collectionOne.size() - diffOne << ") : ";
-    cout << std::boolalpha << std::is_heap(begin(collectionOne), end(collectionOne) - diffOne) << endl;
+    cout << std::boolalpha << std::is_heap(begin(collectionOne), end(collectionOne) - diffOne) << endl << endl;
 
     cout << "Collection Two: ";
     std::vector<Integer> collectionTwo {
@@ -78,7 +78,14 @@ int main() {
     auto diffTwo = collectionTwo.size()/2;
     cout << "Is a Max Heap for Range - (" << 0 << " to " << collectionTwo.size() - diffTwo << ") : ";
     cout << std::boolalpha << std::is_heap(begin(collectionTwo), end(collectionTwo) - diffTwo) << endl;
+    cout << "---------------------------------" << endl << endl;
+
+    cout << "Collection with no elements" << endl;
     cout << "---------------------------------" << endl;
+    cout << "Collection Three: ";
+    std::vector<int> collectionThree {};
+    PrintCollection(collectionThree);
+    cout << std::boolalpha << std::is_heap(begin(collectionThree), end(collectionThree)) << endl;
 
     return 0;
 }
