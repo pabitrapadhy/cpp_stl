@@ -8,5 +8,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/is_heap" "${PROJECT_SOURCE_DIR}/_output/
 add_subdirectory("${PROJECT_SOURCE_DIR}/is_heap_until" "${PROJECT_SOURCE_DIR}/_output/is_heap_until_output")
 add_subdirectory("${PROJECT_SOURCE_DIR}/push_heap" "${PROJECT_SOURCE_DIR}/_output/push_heap_output")
 add_subdirectory("${PROJECT_SOURCE_DIR}/pop_heap" "${PROJECT_SOURCE_DIR}/_output/pop_heap_output")
+add_subdirectory("${PROJECT_SOURCE_DIR}/sort_heap" "${PROJECT_SOURCE_DIR}/_output/sort_heap_output")
 
 add_executable(cpp_stl main.cpp)
