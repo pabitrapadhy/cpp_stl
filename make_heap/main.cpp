@@ -29,13 +29,24 @@ int main() {
         Integer{9}
     };
 
+    cout << "Collection to create Max Heap :";
+    PrintCollection(nativeTypeCollection);
     MaxHeapify(nativeTypeCollection);
     cout << "Binary Max Heap : ";
     PrintCollection(nativeTypeCollection);
 
+    cout << "Collection to create Max Heap :";
+    PrintCollection(userDefinedTypeCollection);
     MaxHeapify(userDefinedTypeCollection);
     cout << "Binary Max Heap : ";
     PrintCollection(userDefinedTypeCollection);
+
+    std::vector<int> simpleCollection {5, 9, 3, 2, 4, 8, 3};
+    cout << endl << "Collection to create Min Heap :";
+    PrintCollection(simpleCollection);
+    cout << "Binary Min Heap : ";
+    std::make_heap(simpleCollection.begin(), simpleCollection.end(), std::greater<>{});
+    PrintCollection(simpleCollection);
 
     return 0;
 }
