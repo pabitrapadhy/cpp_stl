@@ -23,5 +23,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/partition" "${PROJECT_SOURCE_DIR}/_outpu
 add_subdirectory("${PROJECT_SOURCE_DIR}/partition_point" "${PROJECT_SOURCE_DIR}/_output/partition_point_output")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/reverse" "${PROJECT_SOURCE_DIR}/_output/reverse_output")
+add_subdirectory("${PROJECT_SOURCE_DIR}/shuffle" "${PROJECT_SOURCE_DIR}/_output/shuffle_output")
 
 add_executable(cpp_stl main.cpp)
