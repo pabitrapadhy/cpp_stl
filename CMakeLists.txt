@@ -20,5 +20,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/partial_sort" "${PROJECT_SOURCE_DIR}/_ou
 add_subdirectory("${PROJECT_SOURCE_DIR}/nth_element" "${PROJECT_SOURCE_DIR}/_output/nth_element_output")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/partition" "${PROJECT_SOURCE_DIR}/_output/partition_output")
+add_subdirectory("${PROJECT_SOURCE_DIR}/partition_point" "${PROJECT_SOURCE_DIR}/_output/partition_point_output")
 
 add_executable(cpp_stl main.cpp)
