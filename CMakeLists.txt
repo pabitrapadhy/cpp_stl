@@ -11,5 +11,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/pop_heap" "${PROJECT_SOURCE_DIR}/_output
 add_subdirectory("${PROJECT_SOURCE_DIR}/sort_heap" "${PROJECT_SOURCE_DIR}/_output/sort_heap_output")
 add_subdirectory("${PROJECT_SOURCE_DIR}/sort" "${PROJECT_SOURCE_DIR}/_output/sort_output")
 add_subdirectory("${PROJECT_SOURCE_DIR}/inplace_merge" "${PROJECT_SOURCE_DIR}/_output/inplace_merge_output")
+add_subdirectory("${PROJECT_SOURCE_DIR}/partial_sort" "${PROJECT_SOURCE_DIR}/_output/partial_sort_output")
 
 add_executable(cpp_stl main.cpp)
