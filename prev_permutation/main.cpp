@@ -21,44 +21,44 @@ int main() {
 
     cout << "NOTE:\n"
             "Collection goes lexicographically increasing, \n"
-            "therefore first we sorted, then the next_permutation gives all possible outputs until \n"
-            "it's all sorted in descending order" << endl;
+            "if it's already sorted, then the next_permutation gives all possible outputs \n"
+            "but the prev_permutation will give only a single output" << endl;
 
     cout << endl << "Collection: ";
     PrintCollection(nativeTypeCollection);
     std::sort(nativeTypeCollection.begin(), nativeTypeCollection.end());
-    cout << "All next_permutation of the collection are: " << endl;
+    cout << "Only permutation available is same as std::sort of collection: " << endl;
     do {
         PrintCollection(nativeTypeCollection);
-    } while (std::next_permutation(nativeTypeCollection.begin(), nativeTypeCollection.end()));
+    } while (std::prev_permutation(nativeTypeCollection.begin(), nativeTypeCollection.end()));
 
     cout << endl << "Collection: ";
     PrintCollection(floatTypeCollection);
     std::sort(floatTypeCollection.begin(), floatTypeCollection.end());
-    cout << "All next_permutation of the collection are: " << endl;
+    cout << "Only permutation available is same as std::sort of collection: " << endl;
     do {
         PrintCollection(floatTypeCollection);
-    } while (std::next_permutation(floatTypeCollection.begin(), floatTypeCollection.end()));
+    } while (std::prev_permutation(floatTypeCollection.begin(), floatTypeCollection.end()));
 
     cout << endl << "Collection: ";
     cout << name << endl;
     std::sort(name.begin(), name.end());
-    cout << "All next_permutation of the collection are: " << endl;
+    cout << "Only permutation available is same as std::sort of collection: " << endl;
     do {
         cout << name << endl;
-    } while (std::next_permutation(name.begin(), name.end()));
+    } while (std::prev_permutation(name.begin(), name.end()));
 
     cout << endl << "Collection: ";
     PrintCollection(userDefinedTypeCollection);
     cout << "NOTE: \n"
             "Collection is already sorted in decreasing order\n"
-            "Therefore it has no next_permutation" << endl;
+            "Therefore it has only prev_permutation, no next_permutation" << endl << endl;
 
     std::sort(userDefinedTypeCollection.begin(), userDefinedTypeCollection.end(), std::greater<>());
-    cout << "Only permutation available is same as std::sort of collection: " << endl;
+    cout << "All prev_permutation of the collection are: " << endl;
     do {
         PrintCollection(userDefinedTypeCollection);
-    } while (std::next_permutation(userDefinedTypeCollection.begin(), userDefinedTypeCollection.end()));
+    } while (std::prev_permutation(userDefinedTypeCollection.begin(), userDefinedTypeCollection.end()));
 
     return 0;
 }
